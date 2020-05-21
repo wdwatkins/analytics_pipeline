@@ -48,7 +48,7 @@ pipeline {
         } 
       }
       steps {
-        retry(2){
+        retry(3){
           sh 'Rscript -e "source(\'R/pull_GA_data.R\')"'
         }
       }
